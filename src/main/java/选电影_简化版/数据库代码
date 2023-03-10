@@ -1,0 +1,15 @@
+-- 创建电影数据表
+CREATE TABLE t_movies (
+ id INT PRIMARY KEY AUTO_INCREMENT COMMENT "编号 主键约束",
+ movie_name VARCHAR(50) NOT NULL COMMENT "电影名称",
+ movie_type VARCHAR(20) NOT NULL COMMENT "电影类型",
+ area VARCHAR(20) COMMENT "地区",
+ rating DOUBLE COMMENT "电影评分"
+);
+-- 插⼊数据
+INSERT INTO t_movies VALUES
+ (1,"肖申克的救赎","剧情/犯罪","美国",9.7),
+ (2,"霸王别姬","剧情/爱情/同性","中国",9.6),
+ (3,"阿⽢正传","剧情/爱情","美国",9.5),
+ (4,"泰坦尼克号","剧情/爱情/灾难","美国",9.5),
+ (5,"这个杀⼿不太冷","剧情/动作/犯罪","法国",9.4);

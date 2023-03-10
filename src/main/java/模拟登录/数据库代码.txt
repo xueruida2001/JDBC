@@ -1,0 +1,11 @@
+-- 创建⽤户表
+create database 模拟登录;
+use 模拟登录;
+CREATE TABLE t_user (
+                        id VARCHAR(10) PRIMARY KEY COMMENT "编号 主键约束",
+                        name VARCHAR(10) NOT NULL COMMENT "⽤户名",
+                        passwd VARCHAR(20) NOT NULL COMMENT "密码"
+);
+注意这里用的是name和passwd所以Java代码中的sql查询代码必须写name和passwd，如果写成password就会报错
+-- 插⼊数据
+INSERT INTO t_user VALUES("1","不重名王⼆","123456");
